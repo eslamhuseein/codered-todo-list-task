@@ -1,0 +1,16 @@
+<div style="padding-top: 25%;">
+    <v-row>
+        <v-col cols="12" xl="8" lg="8" md="8" sm="12">
+            <v-text-field v-model="description" label="Task title" @keyup.enter="addNewTask" filled outlined
+                dense></v-text-field>
+        </v-col>
+        <v-col cols="12" xl="4" lg="4" md="4" sm="12">
+            <v-btn @click="addNewTask" tile color="primary">
+                <v-icon left>
+                    mdi-plus-box
+                </v-icon>
+                Add
+            </v-btn>
+        </v-col>
+    </v-row>
+</div>
